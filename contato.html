@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="topo">
+            <a href="inicio.html">
+                <div class="logo">
+                    <img src="img/logo-generica.png" alt="logo-generica">
+                    <p>CyberZone</p>
+                </div>
+            </a>
+            <div class="pesquisa">
+                <input type="search" id="barra-pesquisa" placeholder="Pesquisa">
+                <div class="pesquisa-dropdown">
+                    <div class="secao-pesquisa">
+                        <h3>Visto recentemente</h3>
+                        <ul>
+                            <li><a href="#">Mouse</a></li>
+                            <li><a href="#">Monitor</a></li>
+                            <li><a href="#">Gabinete</a></li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <div class="secao-pesquisa">
+                        <h3>Categorias</h3>
+                        <ul>
+                            <li><a href="produtos.html@mouses">Mouses</a></li>
+                            <li><a href="produtos.html@monitores">Monitores</a></li>
+                            <li><a href="produtos.html@gabinetes">Gabinetes</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="inicio.html">Início</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li class="menu-produtos">
+                        <a href="produtos.html">Produtos</a>
+                        <ul class="submenu">
+                            <li><a href="produtos.html#processadores">Processador</a></li>
+                            <li><a href="produtos.html#placas-de-video">Placa de Vídeo</a></li>
+                            <li><a href="produtos.html#memorias-ram">Memória RAM</a></li>
+                            <li><a href="produtos.html#ssds">SSD</a></li>
+                            <li><a href="produtos.html#coolers">Cooler</a></li>
+                            <li><a href="produtos.html#placas-mae">Placa Mãe</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contatos</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="card-contatos">
+            <div class="secao-contato">
+                <div class="textos-secao-contato">
+                    <h2>Entre em contato conosco!</h2>
+                    <h3>Endereço</h3>
+                    <p>Rua Core I5, 1235u, Recife-PE</p>
+                    <h3>Telefone</h3>
+                    <p>4002-8922</p>
+                    <h3>Email</h3>
+                    <p>vitorazevedovmpa02@gmail.com</p>
+                </div>
+            </div>
+            <form class="form-contato">
+                <div class="inputs-contato">
+                    <label for="nome">Nome</label>
+                    <input type="text" placeholder="João Kleber" id="nome">
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="nome@exemplo" id="email">
+                    <label for="assunto">Assunto</label>
+                    <input type="text" placeholder="Atraso na entrega" id="assunto">
+                    <label for="mensagem">Mensagem</label>
+                    <input type="text" placeholder="Explique a situação detalhadamente" id="mensagem">
+                    <input type="submit" value="Enviar mensagem">
+            </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape-grid">
+            <div class="coluna">
+                <h3>CyberZone</h3>
+                <p>Projeto simulando uma loja virtual de informáticas. Criado para aprofundar os fundamentos em HTML e CSS</p>
+            </div>
+            <div class="coluna">
+                <h3>Navegação</h3>
+                <nav>
+                    <ul>
+                        <li><a href="inicio.html">Início</a></li>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="coluna">
+                <h3>Endereço</h3>
+                <p>Rua Core I5, 1235u</p>
+                <p>Recife - PE</p>
+                <p>4002-8922</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>CyberZone - Vitor Miguel</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="topo">
+            <a href="inicio.html">
+                <div class="logo">
+                    <img src="img/logo-generica.png" alt="logo-generica">
+                    <p>CyberZone</p>
+                </div>
+            </a>
+            <div class="pesquisa">
+                <input type="search" id="barra-pesquisa" placeholder="Pesquisa">
+                <div class="pesquisa-dropdown">
+                    <div class="secao-pesquisa">
+                        <h3>Visto recentemente</h3>
+                        <ul>
+                            <li><a href="#">Mouse</a></li>
+                            <li><a href="#">Monitor</a></li>
+                            <li><a href="#">Gabinete</a></li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <div class="secao-pesquisa">
+                        <h3>Categorias</h3>
+                        <ul>
+                            <li><a href="produtos.html@mouses">Mouses</a></li>
+                            <li><a href="produtos.html@monitores">Monitores</a></li>
+                            <li><a href="produtos.html@gabinetes">Gabinetes</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="inicio.html">Início</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li class="menu-produtos">
+                        <a href="produtos.html">Produtos</a>
+                        <ul class="submenu">
+                            <li><a href="produtos.html#processadores">Processador</a></li>
+                            <li><a href="produtos.html#placas-de-video">Placa de Vídeo</a></li>
+                            <li><a href="produtos.html#memorias-ram">Memória RAM</a></li>
+                            <li><a href="produtos.html#ssds">SSD</a></li>
+                            <li><a href="produtos.html#coolers">Cooler</a></li>
+                            <li><a href="produtos.html#placas-mae">Placa Mãe</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contatos</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Mais Vendidos</h1>
+        <div class="conjunto-grid-mais-vendidos">
+            <div class="card-mais-vendidos" id="semana">
+                <h2>Última semana</h2>
+                <ol>
+                    <li><a href="#">Processador Intel Core i5-1235u</a></li>
+                    <li><a href="#">Vídeo Integrado Intel Iris Xe Graphics</a></li>
+                    <li><a href="#">Memória RAM 8gb DDR4</a></li>
+                </ol>
+            </div>
+            <div class="card-mais-vendidos" id="mes">
+                <h2>Último mês</h2>
+                <ol>
+                    <li><a href="#">Processador Intel Core i5-1235u</a></li>
+                    <li><a href="#">Vídeo Integrado Intel Iris Xe Graphics</a></li>
+                    <li><a href="#">Memória RAM 8gb DDR4</a></li>
+                </ol>
+            </div>
+        </div>
+        <h2 class="titulo-grid-produtos-horizontais">Novidades</h2>
+        <div class="grid-produtos-hotizontais" id="novidades">
+            <div class="grid-horizontal">
+                <a href="#">
+                    <img src="https://images.kabum.com.br/produtos/fotos/85198/85198_1484306114_gg.jpg" alt="img-produto">
+                    <p id="info-produto-grid-horizontal">SSD Kingston A400, 480GB, SATA III, 2.5", Leitura: 500MB/s, Gravação: 450MB/s, Preto - SA400S37/480G</p>
+                    <p id="preco-produto-grid-horizontal">R$ 569,99</p>
+                </a>
+            </div>
+            <div class="grid-horizontal">
+                <a href="#">
+                    <img src="https://images.kabum.com.br/produtos/fotos/747516/monitor-gamer-asus-tuf-27-qhd-210hz-0-3ms-fast-ips-g-sync-comp-freesync-premium-hdr10-som-integrado-vg27aq5a_1779197587_gg.jpg" alt="img-produto">
+                    <p id="info-produto-grid-horizontal">Monitor Gamer ASUS TUF 27", QHD, 210Hz, 0.3ms, Fast IPS, G-Sync Comp, FreeSync Premium, HDR10</p>
+                    <p id="preco-produto-grid-horizontal">R$ 1.299,99</p>
+                </a>
+            </div>
+            <div class="grid-horizontal">
+                <a href="#">
+                    <img src="https://images.kabum.com.br/produtos/fotos/626784/ssd-pcie-husky-thunderboost-256gb-m-2-nvme-leitura-1800mb-s-gravacao-1100mb-s-hssd002256_1745951719_gg.jpg" alt="img-produto">
+                    <p id="info-produto-grid-horizontal">SSD PCIe Husky ThunderBoost, 256GB, M.2 NVMe, Leitura 1800MB/s, Gravação 1100MB/s - HSSD002256</p>
+                    <p id="preco-produto-grid-horizontal">R$ 403,99</p>
+                </a>
+            </div>
+            <div class="grid-horizontal">
+                <a href="#">
+                    <img src="https://images.kabum.com.br/produtos/fotos/593795/corsair-m65-rgb-ultra-gaming-mouse-backlit-rgb-led-optical-silver-alu-black-ch-9309411-na2_1729765851_gg.jpg" alt="img-produto">
+                    <p id="info-produto-grid-horizontal">Mouse Gamer Corsair M65 Ultra, RGB LED, 26000 DPI, 8 Botões, Optical, Preto - CH-9309411-NA2</p>
+                    <p id="preco-produto-grid-horizontal">R$ 319,99</p>
+                </a>
+            </div>
+            <div class="grid-horizontal">
+                <a href="#">
+                    <img src="https://images.kabum.com.br/produtos/fotos/997977/teclado-mecanico-sem-fio-attack-shark-x85-pro-rgb-tri-mode-moonlit-night_1781003108_gg.jpg" alt="img-produto">
+                    <p id="info-produto-grid-horizontal">Teclado Sem Fio Mecânico Gamer Attack Shark X85PRO, RGB, Tela Integrada, Tri-Mode Wireless Bluetooth USB-C</p>
+                    <p id="preco-produto-grid-horizontal">R$ 399,99</p>
+                </a>
+            </div>
+        </div>
+        <h2 class="titulo-grid-produtos-horizontais">Ofertas em destaque</h2>
+        <div class="grid-produtos-hotizontais" id="ofertas">
+            <div class="grid-horizontal">
+                <a href="#">
+                    <img src="https://images.kabum.com.br/produtos/fotos/114781/placa-mae-gigabyte-b550m-aorus-elite-amd-am4-micro-atx-ddr4_1594908595_gg.jpg" alt="img-produto">
+                    <p id="info-produto-grid-horizontal">Placa-Mãe Gigabyte B550M Aorus Elite Rev. 1.3, AMD AM4, Micro ATX, DDR4, Preto - B550M AORUS ELITE</p>
+                    <p id="preco-produto-grid-horizontal">R$ 709,99</p>
+                </a>
+            </div>
+            <div class="grid-horizontal">
+                <a href="#">
+                    <img src="https://images.kabum.com.br/produtos/fotos/761532/placa-de-video-asus-dual-rtx5060ti-o8g-90yv0mp2-m0na00_1744739054_gg.jpg" alt="img-produto">
+                    <p id="info-produto-grid-horizontal">Placa de Vídeo ASUS RTX 5060 TI DUAL O8G NVIDIA GeForce, 8GB, GDDR7, DLSS, Ray Tracing</p>
+                    <p id="preco-produto-grid-horizontal">R$ 3.299,99</p>
+                </a>
+            </div>
+            <div class="grid-horizontal">
+                <a href="#">
+                    <img src="https://media.pichau.com.br/media/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/l/n/lnm790x512g-rnnng2.jpg" alt="img-produto">
+                    <p id="info-produto-grid-horizontal">SSD Lexar NM790, 512GB, M.2 2280, PCIe NVMe, Leitura 7200MB/s, Gravacao 4400MB/s, LNM790X512G-RNNNG</p>
+                    <p id="preco-produto-grid-horizontal">R$ 699,99</p>
+                </a>
+            </div>
+            <div class="grid-horizontal">
+                <a href="#">
+                    <img src="https://media.pichau.com.br/media/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/p/g/pg-ntn-rbw011227.jpg" alt="img-produto">
+                    <p id="info-produto-grid-horizontal">Combo Gamer Pichau Netuno 4x1, Rainbow, Teclado ABNT2, Mouse 8000DPI, Mousepad Medio, Headset Drivers 50mm</p>
+                    <p id="preco-produto-grid-horizontal">R$ 160,99</p>
+                </a>
+            </div>
+            <div class="grid-horizontal">
+                <a href="#">
+                    <img src="https://media.pichau.com.br/media/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/z/n/zno-vzonpro-bl02v5296461214.jpg" alt="img-produto">
+                    <p id="info-produto-grid-horizontal">Extensor de Tela Duplo Para Notebook Zinnia Vision Pro, 14 Pol, IPS, 60Hz, DP/Tipo-C, ZNO-VZONPRO-BL02</p>
+                    <p id="preco-produto-grid-horizontal">R$ 1.459,99</p>
+                </a>
+            </div>
+        </div>
+        <h2 class="titulo-grid-produtos-horizontais">Processadores</h2>
+        <div class="grid-produtos-hotizontais" id="processadores">
+            <div class="grid-horizontal">
+                <a href="#">
+                    <img src="https://media.pichau.com.br/media/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/b/x/bx80768270k.jpg" alt="img-produto">
+                    <p id="info-produto-grid-horizontal">Processador Intel Core Ultra 7 270K Plus, 24-Core, 24-Threads, 3.7Ghz (5.5GHz Turbo), Cache 36MB, LGA1851</p>
+                    <p id="preco-produto-grid-horizontal">R$ 2.229,99</p>
+                </a>
+            </div>
+            <div class="grid-horizontal">
+                <a href="#">
+                    <img src="https://media.pichau.com.br/media/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/1/0/100-100000261box.jpg" alt="img-produto">
+                    <p id="info-produto-grid-horizontal">Processador AMD Ryzen 5 5600GE, 6-Core, 12-Threads, 3.4GHz (4.4GHz Turbo), Cache 19MB, AM4</p>
+                    <p id="preco-produto-grid-horizontal">R$ 869,99</p>
+                </a>
+            </div>
+            <div class="grid-horizontal">
+                <a href="#">
+                    <img src="https://media.pichau.com.br/media/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/1/0/100-100001973wof.jpg" alt="img-produto">
+                    <p id="info-produto-grid-horizontal">Processador AMD Ryzen 7 9850X3D, 8-Core, 16-Threads, 4.7GHz (5.6GHz Turbo), Cache 104MB, AM5</p>
+                    <p id="preco-produto-grid-horizontal">R$ 3.299,99</p>
+                </a>
+            </div>
+            <div class="grid-horizontal">
+                <a href="#">
+                    <img src="https://media.pichau.com.br/media/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/b/x/bx80768225f.jpg" alt="img-produto">
+                    <p id="info-produto-grid-horizontal">Processador Intel Core Ultra 5 225F, 10-Core, 10-Threads, 3.3GHz (4.9GHz Turbo), Cache 20MB, LGA1851</p>
+                    <p id="preco-produto-grid-horizontal">R$ 579,99</p>
+                </a>
+            </div>
+            <div class="grid-horizontal">
+                <a href="#">
+                    <img src="https://media.pichau.com.br/media/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/b/x/bx8071512900kf-br1.jpg" alt="img-produto">
+                    <p id="info-produto-grid-horizontal">Processador Intel Core i9-12900KF, 16-Core, 24-Threads, 3.2GHz (5.2GHz Turbo), Cache 30MB, LGA1700</p>
+                    <p id="preco-produto-grid-horizontal">R$ 2.299,99</p>
+                </a>
+            </div>
+        </div>
+        <h2 class="titulo-grid-produtos-horizontais" id="placas-de-video">Placas de Vídeo</h2>
+        <div class="grid-produtos-hotizontais">
+            <div class="grid-horizontal">
+                <a href="#">
+                    <img src="https://media.pichau.com.br/media/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/9/1/912-v531-676-nac6.jpg" alt="img-produto">
+                    <p id="info-produto-grid-horizontal">Placa de VIdeo MSI GeForce RTX 5080 Ventus 3X OC, 16GB, GDDR7, 256-bit, 912-V531-676-NAC</p>
+                    <p id="preco-produto-grid-horizontal">R$ 11.999,99</p>
+                </a>
+            </div>
+            <div class="grid-horizontal">
+                <a href="#">
+                    <img src="https://media.pichau.com.br/media/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/d/u/dual-rtx5060ti-o8g-nac1.jpg" alt="img-produto">
+                    <p id="info-produto-grid-horizontal">Placa de Video Asus GeForce RTX 5060 Ti Dual OC, 8GB, GDDR7, 128-bit, DUAL-RTX5060TI-O8G-NAC</p>
+                    <p id="preco-produto-grid-horizontal">R$ 2.989,99</p>
+                </a>
+            </div>
+            <div class="grid-horizontal">
+                <a href="#">
+                    <img src="https://media.pichau.com.br/media/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/n/e/ne63050018je-1072e-nac1.jpg" alt="img-produto">
+                    <p id="info-produto-grid-horizontal">Placa de Video Gainward GeForce RTX 3050 Pegasus, 6GB, GDDR6, 96-bit, NE63050018JE-1072E-NAC</p>
+                    <p id="preco-produto-grid-horizontal">R$ 1.289,99</p>
+                </a>
+            </div>
+            <div class="grid-horizontal">
+                <a href="#">
+                    <img src="https://img.terabyteshop.com.br/produto/g/placa-de-video-vinik-amd-radeon-rx-580-8gb-gddr5-256-bits-gpuvk580v28gb2f_275786.jpg" alt="img-produto">
+                    <p id="info-produto-grid-horizontal">Placa de Vídeo Vinik AMD Radeon RX 580, 8GB, GDDR5, 256 Bits, GPUVK580V28GB2F</p>
+                    <p id="preco-produto-grid-horizontal">R$ 879,99</p>
+                </a>
+            </div>
+            <div class="grid-horizontal">
+                <a href="#">
+                    <img src="https://media.pichau.com.br/media/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/g/v/gv-n5080aorus-if-16gd4.jpg" alt="img-produto">
+                    <p id="info-produto-grid-horizontal">Placa de Video Gigabyte GeForce RTX 5080 Aorus Infinity, 16GB, GDDR7, 256-bit, GV-N5080AORUS-IF-16GD</p>
+                    <p id="preco-produto-grid-horizontal">R$ 13.499,99</p>
+                </a>
+            </div>
+        </div>
+        <h2 class="titulo-grid-produtos-horizontais" id="memorias-ram">Memórias RAM</h2>
+        <div class="grid-produtos-hotizontais">
+            <div class="grid-horizontal">
+                <a href="#">
+                    <img src="https://media.pichau.com.br/media/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/n/t/ntbsd4n32sp-161.jpg" alt="img-produto">
+                    <p id="info-produto-grid-horizontal">Memoria Para Notebook Netac Basic, 16GB (1x16GB), DDR4, 3200MHz, CL22, Preto, NTBSD4N32SP-16</p>
+                    <p id="preco-produto-grid-horizontal">R$ 809,99</p>
+                </a>
+            </div>
+            <div class="grid-horizontal">
+                <a href="#">
+                    <img src="https://media.pichau.com.br/media/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/c/m/cmk64gx5m2b6600c32122.jpg" alt="img-produto">
+                    <p id="info-produto-grid-horizontal">Memoria Corsair Vengeance, 64GB (2x32GB), DDR5, 6600MHz, CL32, Preto, CMK64GX5M2B6600C32</p>
+                    <p id="preco-produto-grid-horizontal">R$ 10.799,99</p>
+                </a>
+            </div>
+            <div class="grid-horizontal">
+                <a href="#">
+                    <img src="https://media.pichau.com.br/media/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/k/f/kf588cu42rwa-24121.jpg" alt="img-produto">
+                    <p id="info-produto-grid-horizontal">Memoria Kingston Fury Renegade, RGB, 24GB (1x24GB), DDR5, 8800MT/s, CL42, Branco</p>
+                    <p id="preco-produto-grid-horizontal">R$ 4.489,99</p>
+                </a>
+            </div>
+            <div class="grid-horizontal">
+                <a href="#">
+                    <img src="https://media.pichau.com.br/media/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/h/s/hsr-m4328dgms2.jpg" alt="img-produto">
+                    <p id="info-produto-grid-horizontal">Memoria Hawking, 8GB (1x8GB), DDR4, 3200MHz, Preto, HSR-M4328DGMS</p>
+                    <p id="preco-produto-grid-horizontal">R$ 429,99</p>
+                </a>
+            </div>
+            <div class="grid-horizontal">
+                <a href="#">
+                    <img src="https://media.pichau.com.br/media/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/h/s/hsc416u32c4-16g.jpg" alt="img-produto">
+                    <p id="info-produto-grid-horizontal">Memoria Hiksemi Future, RGB, 16GB (1x16GB), DDR4, 3200MHz, Preta, HSC416U32C4-16G</p>
+                    <p id="preco-produto-grid-horizontal">R$ 1.089,99</p>
+                </a>
+            </div>
+        </div>
+        <h2 class="titulo-grid-produtos-horizontais" id="ssds">SSDs</h2>
+        <div class="grid-produtos-hotizontais">
+            <div class="grid-horizontal">
+                <a href="#">
+                    <img src="https://media.pichau.com.br/media/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/l/n/lnm790x512g-rnnng2.jpg" alt="img-produto">
+                    <p id="info-produto-grid-horizontal">SSD Lexar NM790, 512GB, M.2 2280, PCIe NVMe, Leitura 7200MB/s, Gravacao 4400MB/s, LNM790X512G-RNNNG</p>
+                    <p id="preco-produto-grid-horizontal">R$ 699,99</p>
+                </a>
+            </div>
+            <div class="grid-horizontal">
+                <a href="#">
+                    <img src="https://media.pichau.com.br/media/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/s/n/snv3sm3-2t01.jpg" alt="img-produto">
+                    <p id="info-produto-grid-horizontal">SSD Kingston NV3, 2TB, M.2 2230, PCIe NVMe, Leitura 6000MB/s, Gravacao 5000MB/s, SNV3SM3-2T0</p>
+                    <p id="preco-produto-grid-horizontal">R$ 2.959,99</p>
+                </a>
+            </div>
+            <div class="grid-horizontal">
+                <a href="#">
+                    <img src="https://media.pichau.com.br/media/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/m/v/mv120gb22412.jpg" alt="img-produto">
+                    <p id="info-produto-grid-horizontal">SSD Macrovip Premium, 120GB, 2.5, Sata III 6GB/s, Leitura 520MB/s, Gravacao 450/MBs, MV120GB</p>
+                    <p id="preco-produto-grid-horizontal">R$ 205,99</p>
+                </a>
+            </div>
+            <div class="grid-horizontal">
+                <a href="#">
+                    <img src="https://media.pichau.com.br/media/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/s/d/sdssda-2t00-g28221.jpg" alt="img-produto">
+                    <p id="info-produto-grid-horizontal">SSD Sandisk Plus, 2TB, 2.5, Sata III 6GB/s, Leitura 545MB/s, Gravacao 515/MBs, SDSSDA-2T00-G28</p>
+                    <p id="preco-produto-grid-horizontal">R$ 2.589,99</p>
+                </a>
+            </div>
+            <div class="grid-horizontal">
+                <a href="#">
+                    <img src="https://media.pichau.com.br/media/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/s/d/sdsp71100tan-000e01.jpg" alt="img-produto">
+                    <p id="info-produto-grid-horizontal">SSD Sandisk Optimus GX 7100, 1TB, M.2 2280, PCIe NVMe, Leitura 7250 MB/s, Gravacao 6900 MB/s, SDSP71100TAN</p>
+                    <p id="preco-produto-grid-horizontal">R$ 2.199,99</p>
+                </a>
+            </div>
+        </div>
+        <h2 class="titulo-grid-produtos-horizontais" id="coolers">Coolers</h2>
+        <div class="grid-produtos-hotizontais">
+            <div class="grid-horizontal">
+                <a href="#">
+                    <img src="https://media.pichau.com.br/media/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/l/e/le360rd-bkammm-a-1.jpg" alt="img-produto">
+                    <p id="info-produto-grid-horizontal">Water Cooler Redragon X Gamerstorm LE360 RD, ARGB, 360mm, Preto, LE360RD-BKAMMM-A-1</p>
+                    <p id="preco-produto-grid-horizontal">R$ 459,99</p>
+                </a>
+            </div>
+            <div class="grid-horizontal">
+                <a href="#">
+                    <img src="https://media.pichau.com.br/media/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/a/c/acfre00123a.jpg" alt="img-produto">
+                    <p id="info-produto-grid-horizontal">Cooler Para Processador Arctic Freezer 36, 120mm, Preto, ACFRE00123A</p>
+                    <p id="preco-produto-grid-horizontal">R$ 239,99</p>
+                </a>
+            </div>
+            <div class="grid-horizontal">
+                <a href="#">
+                    <img src="https://media.pichau.com.br/media/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/r/-/r-lp360-whmsmc-g-14.jpg" alt="img-produto">
+                    <p id="info-produto-grid-horizontal">Water Cooler Deepcool LP360, RGB, Com Display, 360mm, Branco, R-LP360-WHMSMC-G-1</p>
+                    <p id="preco-produto-grid-horizontal">R$ 489,99</p>
+                </a>
+            </div>
+            <div class="grid-horizontal">
+                <a href="#">
+                    <img src="https://media.pichau.com.br/media/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/m/l/mlw-d36m-a18pa-rw3.jpg" alt="img-produto">
+                    <p id="info-produto-grid-horizontal">Water Cooler Cooler Master Masterliquid 360 Core II, ARGB, 360mm, Branco, MLW-D36M-A18PA-RW</p>
+                    <p id="preco-produto-grid-horizontal">R$ 690,00</p>
+                </a>
+            </div>
+            <div class="grid-horizontal">
+                <a href="#">
+                    <img src="https://media.pichau.com.br/media/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/c/l/cl-w400-pl12bl-a.jpg" alt="img-produto">
+                    <p id="info-produto-grid-horizontal">Water Cooler Thermaltake Toughliquid 360 EX Pro, ARGB, 360mm, Preto, CL-W400-PL12BL-A</p>
+                    <p id="preco-produto-grid-horizontal">R$ 1.079,99</p>
+                </a>
+            </div>
+        </div>
+        <h2 class="titulo-grid-produtos-horizontais" id="placas-mae">Placas Mãe</h2>
+        <div class="grid-produtos-hotizontais">
+            <div class="grid-horizontal">
+                <a href="#">
+                    <img src="https://media.pichau.com.br/media/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/p/r/pro-b550m-p4555.jpg" alt="img-produto">
+                    <p id="info-produto-grid-horizontal">Placa Mae Msi Pro B550M-P, DDR4, Socket AMD AM4, M-ATX, Chipset AMD B550, PRO-B550M-P</p>
+                    <p id="preco-produto-grid-horizontal">R$ 669,99</p>
+                </a>
+            </div>
+            <div class="grid-horizontal">
+                <a href="#">
+                    <img src="https://media.pichau.com.br/media/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/a/5/a520mhvd4.jpg" alt="img-produto">
+                    <p id="info-produto-grid-horizontal">Placa Mae 3Green A520MH, DDR4, Socket AMD AM4, M-ATX, Chipset AMD A520, A520MHVD4</p>
+                    <p id="preco-produto-grid-horizontal">R$ 359,99</p>
+                </a>
+            </div>
+            <div class="grid-horizontal">
+                <a href="#">
+                    <img src="https://media.pichau.com.br/media/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/b/6/b650m-gaming-wifi1.jpg" alt="img-produto">
+                    <p id="info-produto-grid-horizontal">Placa Mae Gigabyte B650M Gaming Wifi, DDR5, Socket AMD AM5, M-ATX, Chipset AMD B650, B650M-GAMING</p>
+                    <p id="preco-produto-grid-horizontal">R$ 859,99</p>
+                </a>
+            </div>
+            <div class="grid-horizontal">
+                <a href="#">
+                    <img src="https://media.pichau.com.br/media/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/t/u/tuf-gaming-b760m-plus-ii.jpg" alt="img-produto">
+                    <p id="info-produto-grid-horizontal">Placa Mae Asus TUF Gaming B760M-PLUS II, DDR5, Socket LGA 1700, M-ATX, Chipset Intel B760</p>
+                    <p id="preco-produto-grid-horizontal">R$ 1.179,99</p>
+                </a>
+            </div>
+            <div class="grid-horizontal">
+                <a href="#">
+                    <img src="https://media.pichau.com.br/media/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/t/g/tgt-h310m-t2v34544.jpg" alt="img-produto">
+                    <p id="info-produto-grid-horizontal">Placa Mae TGT H310M-T2, DDR4, LGA1151, M-ATX, Chipset Intel H310, TGT-H310M-T2</p>
+                    <p id="preco-produto-grid-horizontal">R$ 349,99</p>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape-grid">
+            <div class="coluna">
+                <h3>CyberZone</h3>
+                <p>Projeto simulando uma loja virtual de informáticas. Criado para aprofundar os fundamentos em HTML e CSS</p>
+            </div>
+            <div class="coluna">
+                <h3>Navegação</h3>
+                <nav>
+                    <ul>
+                        <li><a href="inicio.html">Início</a></li>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="coluna">
+                <h3>Endereço</h3>
+                <p>Rua Core I5, 1235u</p>
+                <p>Recife - PE</p>
+                <p>4002-8922</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>CyberZone - Vitor Miguel</p>
+        </div>
+    </footer>
+</body>
+</html>

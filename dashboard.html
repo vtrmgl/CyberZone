@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="topo">
+            <a href="inicio.html">
+                <div class="logo">
+                    <img src="img/logo-generica.png" alt="logo-generica">
+                    <p>CyberZone</p>
+                </div>
+            </a>
+            <div class="pesquisa">
+                <input type="search" id="barra-pesquisa" placeholder="Pesquisa">
+                <div class="pesquisa-dropdown">
+                    <div class="secao-pesquisa">
+                        <h3>Visto recentemente</h3>
+                        <ul>
+                            <li><a href="#">Mouse</a></li>
+                            <li><a href="#">Monitor</a></li>
+                            <li><a href="#">Gabinete</a></li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <div class="secao-pesquisa">
+                        <h3>Categorias</h3>
+                        <ul>
+                            <li><a href="produtos.html@mouses">Mouses</a></li>
+                            <li><a href="produtos.html@monitores">Monitores</a></li>
+                            <li><a href="produtos.html@gabinetes">Gabinetes</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="inicio.html">Início</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li class="menu-produtos">
+                        <a href="produtos.html">Produtos</a>
+                        <ul class="submenu">
+                            <li><a href="produtos.html#processadores">Processador</a></li>
+                            <li><a href="produtos.html#placas-de-video">Placa de Vídeo</a></li>
+                            <li><a href="produtos.html#memorias-ram">Memória RAM</a></li>
+                            <li><a href="produtos.html#ssds">SSD</a></li>
+                            <li><a href="produtos.html#coolers">Cooler</a></li>
+                            <li><a href="produtos.html#placas-mae">Placa Mãe</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contatos</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1 id="texto-indicador">Indicadores</h1>
+        <h2 id="titulo-indicador-dashboard">Diário</h2>
+        <div class="indicadores-dashboard">
+            <div class="metrica-indicador-dashboard">
+                <p id="titulo-metrica-dashboard">Pedidos realizados</p>
+                <p id="qtd-preco-metricas-dashboard">XX</p>
+            </div>
+            <div class="linha-vertical-metrica-dashboard"></div>
+            <div class="metrica-indicador-dashboard">
+                <p id="titulo-metrica-dashboard">Pedidos enviados</p>
+                <p id="qtd-preco-metricas-dashboard">XX</p>
+            </div>
+            <div class="linha-vertical-metrica-dashboard"></div>
+            <div class="metrica-indicador-dashboard">
+                <p id="titulo-metrica-dashboard">Pedidos entregues</p>
+                <p id="qtd-preco-metricas-dashboard">XX</p>
+            </div>
+            <div class="linha-vertical-metrica-dashboard"></div>
+            <div class="metrica-indicador-dashboard">
+                <p id="titulo-metrica-dashboard">Renda (R$)</p>
+                <p id="qtd-preco-metricas-dashboard">R$ XXX,XX</p>
+            </div>
+        </div>
+        <h2 id="titulo-indicador-dashboard">Semanal</h2>
+        <div class="indicadores-dashboard">
+            <div class="metrica-indicador-dashboard">
+                <p id="titulo-metrica-dashboard">Pedidos realizados</p>
+                <p id="qtd-preco-metricas-dashboard">XX</p>
+            </div>
+            <div class="linha-vertical-metrica-dashboard"></div>
+            <div class="metrica-indicador-dashboard">
+                <p id="titulo-metrica-dashboard">Pedidos enviados</p>
+                <p id="qtd-preco-metricas-dashboard">XX</p>
+            </div>
+            <div class="linha-vertical-metrica-dashboard"></div>
+            <div class="metrica-indicador-dashboard">
+                <p id="titulo-metrica-dashboard">Pedidos entregues</p>
+                <p id="qtd-preco-metricas-dashboard">XX</p>
+            </div>
+            <div class="linha-vertical-metrica-dashboard"></div>
+            <div class="metrica-indicador-dashboard">
+                <p id="titulo-metrica-dashboard">Renda (R$)</p>
+                <p id="qtd-preco-metricas-dashboard">R$ XXX,XX</p>
+            </div>
+        </div>
+        <h2 id="titulo-indicador-dashboard">Mensal</h2>
+        <div class="indicadores-dashboard">
+            <div class="metrica-indicador-dashboard">
+                <p id="titulo-metrica-dashboard">Pedidos realizados</p>
+                <p id="qtd-preco-metricas-dashboard">XX</p>
+            </div>
+            <div class="linha-vertical-metrica-dashboard"></div>
+            <div class="metrica-indicador-dashboard">
+                <p id="titulo-metrica-dashboard">Pedidos enviados</p>
+                <p id="qtd-preco-metricas-dashboard">XX</p>
+            </div>
+            <div class="linha-vertical-metrica-dashboard"></div>
+            <div class="metrica-indicador-dashboard">
+                <p id="titulo-metrica-dashboard">Pedidos entregues</p>
+                <p id="qtd-preco-metricas-dashboard">XX</p>
+            </div>
+            <div class="linha-vertical-metrica-dashboard"></div>
+            <div class="metrica-indicador-dashboard">
+                <p id="titulo-metrica-dashboard">Renda (R$)</p>
+                <p id="qtd-preco-metricas-dashboard">R$ XXX,XX</p>
+            </div>
+        </div>
+        <h1>Pedidos Recentes</h1>
+        <div class="tabela-pedidos-dashboard">
+            <ul>
+                <li>Pedido</li>
+                <li>#XXX</li>
+                <li>#XXX</li>
+                <li>#XXX</li>
+                <li>#XXX</li>
+                <li>#XXX</li>
+            </ul>
+            <ul>
+                <li>Nome</li>
+                <li>Luiz</li>
+                <li>João</li>
+                <li>Maria</li>
+                <li>Thiago</li>
+                <li>José</li>
+            </ul>
+            <ul>
+                <li>Produto</li>
+                <li>Mouse</li>
+                <li>Teclado</li>
+                <li>Monitor</li>
+                <li>Processador</li>
+                <li>Mousepad</li>
+            </ul>
+            <ul>
+                <li>Preço</li>
+                <li>R$ 100,00</li>
+                <li>R$ 100,00</li>
+                <li>R$ 700,00</li>
+                <li>R$ 900,00</li>
+                <li>R$ 50,00</li>
+            </ul>
+            <ul>
+                <li>Status</li>
+                <li>Enviado</li>
+                <li>Enviado</li>
+                <li>Preparando</li>
+                <li>Enviado</li>
+                <li>Entregue</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape-grid">
+            <div class="coluna">
+                <h3>CyberZone</h3>
+                <p>Projeto simulando uma loja virtual de informáticas. Criado para aprofundar os fundamentos em HTML e CSS</p>
+            </div>
+            <div class="coluna">
+                <h3>Navegação</h3>
+                <nav>
+                    <ul>
+                        <li><a href="inicio.html">Início</a></li>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="coluna">
+                <h3>Endereço</h3>
+                <p>Rua Core I5, 1235u</p>
+                <p>Recife - PE</p>
+                <p>4002-8922</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>CyberZone - Vitor Miguel</p>
+        </div>
+    </footer>
+</body>
+</html>
