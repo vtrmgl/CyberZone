@@ -156,8 +156,14 @@ main{
 
 /* Login */
 .formulario-login{
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    padding: 0 30px;
+    box-sizing: border-box;
+    font-family: 'Between1Bold';
     margin-top: 50px;
     border-radius: 10px;
     border: 2px solid #410200; 
@@ -167,15 +173,7 @@ main{
         font-size: 40px;
     }
 }
-.formulario-login{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    height: 100%;
-    padding: 0 30px;
-    box-sizing: border-box;
-    font-family: 'Between1Bold';
-}
+
 .formulario-login h2{
     margin-top: 10px;
 }
@@ -223,6 +221,93 @@ main{
     color: #410200;
 }
 .formulario-login p a:hover{
+    color: #D9381E;
+}
+
+/* Cadastro */
+.formulario-cadastro{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    padding: 0 30px;
+    box-sizing: border-box;
+    font-family: 'Between1Bold';
+    margin-top: 50px;
+    border-radius: 10px;
+    border: 2px solid #410200; 
+    background-color: bisque;
+    text-align: center;
+    h2{
+        font-size: 40px;
+    }
+}
+.nome-sobrenome-cadastro, .telefone-datanascimento-cadastro{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+    }
+}
+.formulario-cadastro label, .telefone-datanascimento-cadastro div label, .nome-sobrenome-cadastro div label{
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.formulario-cadastro input[type="email"], .formulario-cadastro input[type="password"], .formulario-cadastro input[type="text"]{
+    padding: 8px;
+    margin-bottom: 5px;
+    width: 100%;
+    border: 1px solid #410200;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.telefone-datanascimento-cadastro div input, .nome-sobrenome-cadastro div input{
+    padding: 8px;
+    margin-bottom: 5px;
+    width: 100%;
+    border: 1px solid #410200;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.formulario-cadastro input[type="submit"]{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    width: 100%;
+    cursor: pointer;
+    background-color: #FEA613;
+    color: #262626;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Between1Bold';
+}
+.formulario-cadastro input[type="submit"]:hover{
+    background-color: #D9381E;
+}
+.formulario-cadastro input[type="submit"]:active{
+    opacity: 0.5;
+    
+}
+.formulario-cadastro input[type="password"]:focus, input[type="email"]:focus, input[type="text"]:focus, .telefone-datanascimento-cadastro div input:focus, .nome-sobrenome-cadastro div input:focus{
+    outline: none;
+    border: 2px solid #410200;
+}
+.formulario-cadastro p{
+    color: #262626;
+    font-size: 13px;
+}
+.formulario-cadastro p a{
+    text-decoration: none;
+    color: #410200;
+}
+.formulario-cadastro p a:hover{
     color: #D9381E;
 }
 
@@ -278,7 +363,7 @@ main{
 }
 .grid-produtos-hotizontais{
     position: relative;
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;

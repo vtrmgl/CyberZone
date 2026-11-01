@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <header>
+        <div class="topo">
+            <a href="inicio.html">
+                <div class="logo">
+                    <img src="img/logo-cyberzone.png" alt="logo-cyberzone">
+                    <span>CyberZone</span>
+                </div>
+            </a>
+
+            <!--
+            Logout e perfil só devem aparecer se a sessão estiver ativa, dashboard só aparece se o usuário tiver uma loja.
+            Login só aparece se a sessão não estiver ativa
+             -->
+
+            <nav>
+                <a href="inicio.html" title="Início">
+                    <img src="img/home.svg" alt="Início" class="icone-cabecalho">
+                </a>
+                <a href="perfil.html" title="Perfil">
+                    <img src="img/person.svg" alt="Perfil" class="icone-cabecalho">
+                </a>
+                <a href="dashboard.html" title="Dashboard">
+                    <img src="img/dashboard.svg" alt="Dashboard" class="icone-cabecalho">
+                </a>
+                <a href="login.html" title="Login">
+                    <img src="img/login.svg" alt="Login" class="icone-cabecalho">
+                </a>
+                <a href="index.php" title="Logout">
+                    <img src="img/logout.svg" alt="Logout" class="icone-cabecalho">
+                </a>
+                <a href="sobre.html" title="Sobre">
+                    <img src="img/info.svg" alt="Sobre" class="icone-cabecalho">
+                </a>
+                <a href="contato.html" title="Contato">
+                    <img src="img/envelope.svg" alt="Contato" class="icone-cabecalho">
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <form class="formulario-cadastro">
+            <h1>Cadastro</h1>
+            <div class="nome-sobrenome-cadastro">
+                <div>
+                    <label for="nome">Nome</label>
+                    <input type="text" placeholder="Fulano" id="nome">
+                </div>
+                <div>
+                    <label for="sobrenome">Sobrenome</label>
+                    <input type="text" placeholder="da Silva" id="sobrenome">
+                </div>
+            </div>
+            <div class="telefone-datanascimento-cadastro">
+                <div>
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" placeholder="0012345678" id="telefone">
+                </div>
+                <div>
+                    <label for="data-nascimento">Data de Nascimento</label>
+                    <input type="date" value="01/01/2001" id="data-nascimento">
+                </div>
+            </div>
+            <label for="cpf">CPF</label>
+            <input type="text" placeholder="12345678900" id="cpf">
+            <label for="email">Email</label>
+            <input type="email" placeholder="nome@exemplo" id="email">
+            <label for="senha">Senha</label>
+            <input type="password" placeholder="********" id="senha">
+            <input type="submit" value="Cadastre-se" id="Cadastre-se">
+        </form>
+    </main>
+    <footer class="rodape">
+        <div class="rodape-grid">
+            <div class="coluna">
+                <h3>CyberZone</h3>
+                <p>Projeto simulando uma loja virtual de informáticas. Criado para aprofundar os fundamentos em HTML, CSS, JavaScript, PHP e Mysql</p>
+            </div>
+            <div class="coluna">
+                <h3>Navegação</h3>
+                <nav>
+                    <ul>
+                        <li><a href="inicio.html">Início</a></li>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="coluna">
+                <h3>Endereço</h3>
+                <p>Rua Core I5, 1235u</p>
+                <p>Recife - PE</p>
+                <p>4002-8922</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>CyberZone - Vitor Miguel</p>
+        </div>
+    </footer>
+</body>
+</html>
