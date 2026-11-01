@@ -42,7 +42,7 @@ if(formCadastro){
 
         telefone = telefone.replace(/\D/g, '');
         cpf = cpf.replace(/\D/g, '')
-        dataDeNascimentoComparacao = new Date(dataDeNascimento);
+        const dataDeNascimentoComparacao = new Date(dataDeNascimento);
         const hoje = new Date();
 
         if(!nome || !sobrenome || !cpf || !email || !senha || !conSenha || !dataDeNascimento || !telefone){
@@ -63,10 +63,34 @@ if(formCadastro){
         } else if(cpf.length !== 11){
             alert('Insira um cpf válido.');
             return;
-        }
+        };
 
         alert('Cadastro feito com sucesso');
 
         window.location.href = 'login.html';
+    });
+};
+
+/* Validação do formulário de Contato */
+
+const formContato = document.querySelector("#form-contato");
+
+if(formContato){
+    formContato.addEventListener('submit', function(event){
+        event.preventDefault();
+
+        const nome = document.querySelector('#nome').value.trim();
+        const email = document.querySelector('#email').value.trim();
+        const assunto = document.querySelector('#assunto').value.trim();
+        const mensagem = document.querySelector('#mensagem').value.trim();
+
+        if(!nome || !email || !assunto || !mensagem){
+            alert('Por favor, preencha todos os campos');
+            return;
+        }
+
+        alert('Mensagem enviada com sucesso.');
+
+        window.location.href = 'inicio.html';
     });
 };
