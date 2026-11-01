@@ -11,8 +11,8 @@
         <div class="topo">
             <a href="inicio.html">
                 <div class="logo">
-                    <img src="img/logo-generica.png" alt="logo-generica">
-                    <p>CyberZone</p>
+                    <img src="img/logo-cyberzone.png" alt="logo-cyberzone">
+                    <span>CyberZone</span>
                 </div>
             </a>
             <div class="pesquisa">
@@ -29,33 +29,53 @@
                     <hr>
                     <div class="secao-pesquisa">
                         <h3>Categorias</h3>
-                        <ul>
-                            <li><a href="produtos.html@mouses">Mouses</a></li>
-                            <li><a href="produtos.html@monitores">Monitores</a></li>
-                            <li><a href="produtos.html@gabinetes">Gabinetes</a></li>
-                        </ul>
+                        <div class="colunas-categorias-pesquisa">
+                            <ul>
+                                <li><a href="produtos.html#novidade">Novidades</a></li>
+                                <li><a href="produtos.html#ofertas">Ofertas</a></li>
+                                <li><a href="produtos.html#processadores">Processadores</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="produtos.html#placas-de-video">Placas de Vídeo</a></li>
+                                <li><a href="produtos.html#memorias-ram">Memorias RAM</a></li>
+                                <li><a href="produtos.html#ssds">SSDs</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="produtos.html#coolers">Coolers</a></li>
+                                <li><a href="produtos.html#placas-mae">Placas Mãe</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <!--
+            Logout e perfil só devem aparecer se a sessão estiver ativa, dashboard só aparece se o usuário tiver uma loja.
+            Login só aparece se a sessão não estiver ativa
+             -->
+
             <nav>
-                <ul>
-                    <li><a href="inicio.html">Início</a></li>
-                    <li><a href="dashboard.html">Dashboard</a></li>
-                    <li class="menu-produtos">
-                        <a href="produtos.html">Produtos</a>
-                        <ul class="submenu">
-                            <li><a href="produtos.html#processadores">Processador</a></li>
-                            <li><a href="produtos.html#placas-de-video">Placa de Vídeo</a></li>
-                            <li><a href="produtos.html#memorias-ram">Memória RAM</a></li>
-                            <li><a href="produtos.html#ssds">SSD</a></li>
-                            <li><a href="produtos.html#coolers">Cooler</a></li>
-                            <li><a href="produtos.html#placas-mae">Placa Mãe</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="contato.html">Contatos</a></li>
-                    <li><a href="login.html">Login</a></li>
-                </ul>
+                <a href="inicio.html" title="Início">
+                    <img src="img/home.svg" alt="Início" class="icone-cabecalho">
+                </a>
+                <a href="perfil.html" title="Perfil">
+                    <img src="img/person.svg" alt="Perfil" class="icone-cabecalho">
+                </a>
+                <a href="dashboard.html" title="Dashboard">
+                    <img src="img/dashboard.svg" alt="Dashboard" class="icone-cabecalho">
+                </a>
+                <a href="login.html" title="Login">
+                    <img src="img/login.svg" alt="Login" class="icone-cabecalho">
+                </a>
+                <a href="index.php" title="Logout">
+                    <img src="img/logout.svg" alt="Logout" class="icone-cabecalho">
+                </a>
+                <a href="sobre.html" title="Sobre">
+                    <img src="img/info.svg" alt="Sobre" class="icone-cabecalho">
+                </a>
+                <a href="contato.html" title="Contato">
+                    <img src="img/envelope.svg" alt="Contato" class="icone-cabecalho">
+                </a>
             </nav>
         </div>
     </header>
@@ -131,7 +151,7 @@
         <h1>Pedidos Recentes</h1>
         <div class="tabela-pedidos-dashboard">
             <ul>
-                <li>Pedido</li>
+                <li class="li-dobra-pedidos-dashboard-esquerdo">Pedido</li>
                 <li>#XXX</li>
                 <li>#XXX</li>
                 <li>#XXX</li>
@@ -163,7 +183,7 @@
                 <li>R$ 50,00</li>
             </ul>
             <ul>
-                <li>Status</li>
+                <li class="li-dobra-pedidos-dashboard-direito">Status</li>
                 <li>Enviado</li>
                 <li>Enviado</li>
                 <li>Preparando</li>
@@ -177,7 +197,7 @@
         <div class="rodape-grid">
             <div class="coluna">
                 <h3>CyberZone</h3>
-                <p>Projeto simulando uma loja virtual de informáticas. Criado para aprofundar os fundamentos em HTML e CSS</p>
+                <p>Projeto simulando uma loja virtual de informáticas. Criado para aprofundar os fundamentos em HTML, CSS, JavaScript, PHP e Mysql</p>
             </div>
             <div class="coluna">
                 <h3>Navegação</h3>
@@ -185,7 +205,6 @@
                     <ul>
                         <li><a href="inicio.html">Início</a></li>
                         <li><a href="dashboard.html">Dashboard</a></li>
-                        <li><a href="produtos.html">Produtos</a></li>
                         <li><a href="contato.html">Contato</a></li>
                         <li><a href="sobre.html">Sobre</a></li>
                     </ul>

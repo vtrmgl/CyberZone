@@ -11,8 +11,8 @@
         <div class="topo">
             <a href="inicio.html">
                 <div class="logo">
-                    <img src="img/logo-generica.png" alt="logo-generica">
-                    <p>CyberZone</p>
+                    <img src="img/logo-cyberzone.png" alt="logo-cyberzone">
+                    <span>CyberZone</span>
                 </div>
             </a>
             <div class="pesquisa">
@@ -20,11 +20,22 @@
                 <div class="pesquisa-dropdown">
                     <div class="secao-pesquisa">
                         <h3>Visto recentemente</h3>
-                        <ul>
-                            <li><a href="#">Mouse</a></li>
-                            <li><a href="#">Monitor</a></li>
-                            <li><a href="#">Gabinete</a></li>
-                        </ul>
+                        <div class="colunas-categorias-pesquisa">
+                            <ul>
+                                <li><a href="produtos.html#novidade">Novidades</a></li>
+                                <li><a href="produtos.html#ofertas">Ofertas</a></li>
+                                <li><a href="produtos.html#processadores">Processadores</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="produtos.html#placas-de-video">Placas de Vídeo</a></li>
+                                <li><a href="produtos.html#memorias-ram">Memorias RAM</a></li>
+                                <li><a href="produtos.html#ssds">SSDs</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="produtos.html#coolers">Coolers</a></li>
+                                <li><a href="produtos.html#placas-mae">Placas Mãe</a></li>
+                            </ul>
+                        </div>
                     </div>
                     <hr>
                     <div class="secao-pesquisa">
@@ -37,25 +48,34 @@
                     </div>
                 </div>
             </div>
+
+            <!--
+            Logout e perfil só devem aparecer se a sessão estiver ativa, dashboard só aparece se o usuário tiver uma loja.
+            Login só aparece se a sessão não estiver ativa
+             -->
+
             <nav>
-                <ul>
-                    <li><a href="inicio.html">Início</a></li>
-                    <li><a href="dashboard.html">Dashboard</a></li>
-                    <li class="menu-produtos">
-                        <a href="produtos.html">Produtos</a>
-                        <ul class="submenu">
-                            <li><a href="produtos.html#processadores">Processador</a></li>
-                            <li><a href="produtos.html#placas-de-video">Placa de Vídeo</a></li>
-                            <li><a href="produtos.html#memorias-ram">Memória RAM</a></li>
-                            <li><a href="produtos.html#ssds">SSD</a></li>
-                            <li><a href="produtos.html#coolers">Cooler</a></li>
-                            <li><a href="produtos.html#placas-mae">Placa Mãe</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="contato.html">Contatos</a></li>
-                    <li><a href="login.html">Login</a></li>
-                </ul>
+                <a href="inicio.html" title="Início">
+                    <img src="img/home.svg" alt="Início" class="icone-cabecalho">
+                </a>
+                <a href="perfil.html" title="Perfil">
+                    <img src="img/person.svg" alt="Perfil" class="icone-cabecalho">
+                </a>
+                <a href="dashboard.html" title="Dashboard">
+                    <img src="img/dashboard.svg" alt="Dashboard" class="icone-cabecalho">
+                </a>
+                <a href="login.html" title="Login">
+                    <img src="img/login.svg" alt="Login" class="icone-cabecalho">
+                </a>
+                <a href="index.php" title="Logout">
+                    <img src="img/logout.svg" alt="Logout" class="icone-cabecalho">
+                </a>
+                <a href="sobre.html" title="Sobre">
+                    <img src="img/info.svg" alt="Sobre" class="icone-cabecalho">
+                </a>
+                <a href="contato.html" title="Contato">
+                    <img src="img/envelope.svg" alt="Contato" class="icone-cabecalho">
+                </a>
             </nav>
         </div>
     </header>
@@ -80,8 +100,8 @@
                 </ol>
             </div>
         </div>
-        <h2 class="titulo-grid-produtos-horizontais">Novidades</h2>
-        <div class="grid-produtos-hotizontais" id="novidades">
+        <h2 class="titulo-grid-produtos-horizontais" id="novidades">Novidades</h2>
+        <div class="grid-produtos-hotizontais">
             <div class="grid-horizontal">
                 <a href="#">
                     <img src="https://images.kabum.com.br/produtos/fotos/85198/85198_1484306114_gg.jpg" alt="img-produto">
@@ -118,8 +138,8 @@
                 </a>
             </div>
         </div>
-        <h2 class="titulo-grid-produtos-horizontais">Ofertas em destaque</h2>
-        <div class="grid-produtos-hotizontais" id="ofertas">
+        <h2 class="titulo-grid-produtos-horizontais" id="ofertas">Ofertas em destaque</h2>
+        <div class="grid-produtos-hotizontais">
             <div class="grid-horizontal">
                 <a href="#">
                     <img src="https://images.kabum.com.br/produtos/fotos/114781/placa-mae-gigabyte-b550m-aorus-elite-amd-am4-micro-atx-ddr4_1594908595_gg.jpg" alt="img-produto">
@@ -156,8 +176,8 @@
                 </a>
             </div>
         </div>
-        <h2 class="titulo-grid-produtos-horizontais">Processadores</h2>
-        <div class="grid-produtos-hotizontais" id="processadores">
+        <h2 class="titulo-grid-produtos-horizontais" id="processadores">Processadores</h2>
+        <div class="grid-produtos-hotizontais">
             <div class="grid-horizontal">
                 <a href="#">
                     <img src="https://media.pichau.com.br/media/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/b/x/bx80768270k.jpg" alt="img-produto">
@@ -390,7 +410,7 @@
         <div class="rodape-grid">
             <div class="coluna">
                 <h3>CyberZone</h3>
-                <p>Projeto simulando uma loja virtual de informáticas. Criado para aprofundar os fundamentos em HTML e CSS</p>
+                <p>Projeto simulando uma loja virtual de informáticas. Criado para aprofundar os fundamentos em HTML, CSS, JavaScript, PHP e Mysql</p>
             </div>
             <div class="coluna">
                 <h3>Navegação</h3>
@@ -398,7 +418,6 @@
                     <ul>
                         <li><a href="inicio.html">Início</a></li>
                         <li><a href="dashboard.html">Dashboard</a></li>
-                        <li><a href="produtos.html">Produtos</a></li>
                         <li><a href="contato.html">Contato</a></li>
                         <li><a href="sobre.html">Sobre</a></li>
                     </ul>
